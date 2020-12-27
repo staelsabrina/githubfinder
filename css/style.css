@@ -1,0 +1,225 @@
+@font-face{
+    font-family: 'sig';
+    src: url(/font/modernline.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(4, 53, 102);
+    background-image: url(/img/Octocat.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: -400px;
+    background-position-y: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 90vw;
+    margin-top: 3vh;
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 3px 3px 1px #0c1e46;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #0c1e46;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.back {
+    position: fixed;
+    width: 50px;
+    padding: 5px;
+    background:#0c1e46;
+    right: 0px;
+    bottom:50px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px 0 0 0;
+    transition: 0.5s;
+}
+
+.back:hover {
+    background:#143479;
+}
+
+.back:active {
+    background:#1d48a3;
+}
+
+main {
+    width: 90vw;
+    height: 100vh;
+}
+
+.interface {
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.search {
+    width: 80vw;
+}
+	
+input{
+    outline:none;
+    height: 30px;
+    padding: 5px
+}
+
+.opcoes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#searchName {
+    width: 100%;
+}
+
+select {
+    width: 160px;
+    height: 30px;
+    margin: 10px;
+    outline:none;
+}
+
+label {
+    margin-right: 5px;
+    color:#ffffff
+}
+
+#bio {
+    width: 20px;
+}
+
+button {
+    background: #203053;
+    border: 1px solid #486ab4;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 50px;
+    width: 160px;
+    margin-bottom: 3vh;
+    outline:none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #334b80;
+    border: 1px solid #486ab4;
+    
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* HTML criado no JavaScript */
+
+.profile {
+    border: 1px solid #ffffff;
+    margin: 10px;
+    width: 250px;
+    padding: 20px;
+    background: #203053;
+    box-shadow: 3px 3px 1px #0c1e46;
+    transition: 0.5s;
+}
+
+.profile:hover {
+    background: #2c4374;
+    box-shadow: 6px 6px 3px #0c1e46;
+    text-shadow: 2px 2px 1.5px #0c1e46;
+    transform: scale(1.1);
+}
+
+.profile:hover, .profile:hover img {
+    box-shadow: 6px 6px 3px #0c1e46;
+}
+
+.profile img {
+    width: 200px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.profile p {
+    color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    background: #0e2658;
+    clear:both;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    
+    font-size: 10pt;
+    color: rgb(59, 59, 59);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+#sig {
+    font-family: 'sig';
+}

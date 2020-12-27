@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Desafio Grama.cc</title>
+</head>
+
+<body>
+    <header id="head">
+        <h1>Buscador de Github's</h1>
+        <h3>Utilize os campos abaixo para encontrar o User desejado</h3>
+    </header>
+
+    <a href="#head" class="back">Voltar ao topo</a>
+
+    <main>
+        <section class="interface">
+
+            <section class="search">    
+                <input type="text" id="searchName" size="50" maxlength="50" placeholder="Buscar o nome do Usuário">
+
+                <div class="opcoes">
+
+                    <select id="order">
+                        <option selected="" value="">Reordenar</option>
+                        <option value="desc">Usuários mais novos</option>
+                        <option value="asc">Usuários mais antigos</option>
+                    </select>
+        
+                    <select id="local">
+                        <option selected="" value="">Local</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="acre">Acre</option>
+                        <option value="alagoas">Alagoas</option>
+                        <option value="amapa">Amapá</option>
+                        <option value="amazonas">Amazonas</option>
+                        <option value="bahia">Bahia</option>
+                        <option value="ceará">Ceará</option>
+                        <option value="distrito federal">Distrito Federal</option>
+                        <option value="espírito santo">Espírito Santo</option>
+                        <option value="goias">Goiás</option>
+                        <option value="maranhao">Maranhão</option>
+                        <option value="mato grosso">Mato Grosso</option>
+                        <option value="mato grosso do sul">Mato Grosso do Sul</option>
+                        <option value="minas gerais">Minas Gerais</option>
+                        <option value="para">Pará</option>
+                        <option value="paraiba">Paraíba</option>
+                        <option value="parana">Paraná</option>
+                        <option value="pernambuco">Pernambuco</option>
+                        <option value="piaui">Piauí</option>
+                        <option value="rio de janeiro">Rio de Janeiro</option>
+                        <option value="rio grande do sul">Rio Grande do Sul</option>
+                        <option value="rio grande do norte">Rio Grande do Norte</option>
+                        <option value="rondonia">Rondônia</option>
+                        <option value="roraima">Roraima</option>
+                        <option value="santa catarina">Santa Catarina</option>
+                        <option value="sao paulo">São Paulo</option>
+                        <option value="eergipe">Sergipe</option>
+                        <option value="tocantins">Tocantins</option>
+                    </select>
+
+                    <label for="bio">Selecionar usuários com Bio?</label><input type="checkbox" id="bio">
+
+                </div>
+            </section>
+
+            <button onclick="buscar()">Buscar</button>
+
+            <div id="profile" class="results">
+
+            </div>            
+
+        </section>
+    </main>
+
+    <footer>
+        <p><strong id="sig">Stael Sabrina</strong><br>
+        <a href="http://www.linkedin.com/in/staelsabrina" target="_blank">LinkedIn</a> | <a href="http://www.github.com/staelsabrina" target="_blank">GitHub</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
