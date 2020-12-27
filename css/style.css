@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'sig';
-    src: url(/font/modernline.otf);
+    src: url(./font/modernline.otf);
 }
 
 *{
@@ -18,7 +18,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgb(4, 53, 102);
-    background-image: url(/img/Octocat.png);
+    background-image: url(./img/Octocat.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: -400px;
